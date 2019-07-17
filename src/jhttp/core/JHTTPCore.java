@@ -21,7 +21,7 @@ public class JHTTPCore {
 
     public JHTTPCore(File rootDir, int port) throws IOException {
         if (!rootDir.isDirectory())
-            throw new IOException(rootDir + "ain't exist");
+            throw new IOException(rootDir + " ain't exist");
 
         this.rootDir = rootDir;
         this.port = port;

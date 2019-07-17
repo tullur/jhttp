@@ -7,17 +7,18 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Main {
+public class JHTTPMain {
 
     public static void main(String[] args) {
 
-        Logger logger = Logger.getLogger(Main.class.getCanonicalName());
+        Logger logger = Logger.getLogger(JHTTPMain.class.getCanonicalName());
 
         File docroot;
         try {
-            docroot = new File(args[0]);
+            docroot = new File("src/jhttp/main");
         } catch (ArrayIndexOutOfBoundsException ex) {
             System.out.println("Usage: java http docroot port");
+            System.out.println(ex);
             return;
         }
 
